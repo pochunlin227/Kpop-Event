@@ -4,7 +4,7 @@
 
 - **dino**: https://commons.wikimedia.org/wiki/File:Dino_Right_Here_241210.jpg
 - **dk**: https://commons.wikimedia.org/wiki/File:DK_Follow_240330.jpg
-- **hoshi**: https://commons.wikimedia.org/wiki/File:Hoshi_2018.jpg
+- **hoshi**: https://commons.wikimedia.org/wiki/File:240415_Hoshi.jpg
 - **jeonghan**: https://commons.wikimedia.org/wiki/File:Jeonghan_Follow_240330.jpg
 - **joshua**: https://commons.wikimedia.org/wiki/File:Joshua_Caratland_2025.jpg
 - **jun**: https://commons.wikimedia.org/wiki/File:Jun_Follow_240330_2.jpg
