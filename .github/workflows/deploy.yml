@@ -1,0 +1,56 @@
+name: 爬蟲 + 部署到 GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 每天台北時間 10:00(UTC 02:00)自動爬新活動並重新部署
+    - cron: "0 2 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # 排程觸發時先爬新活動,寫回 data/events.json
+      - name: 執行生咖爬蟲
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          python3 crawler/crawl.py || true
+          if ! git diff --quiet data/events.json; then
+            git config user.name "svt-cafe-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add data/events.json
+            git commit -m "自動更新生咖活動資料"
+            git push
+          fi
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      - name: 建置 Flutter Web
+        run: |
+          flutter pub get
+          flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/web
+      - id: deployment
+        uses: actions/deploy-pages@v4
