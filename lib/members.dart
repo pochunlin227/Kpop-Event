@@ -55,16 +55,28 @@ final Map<String, MilitaryInfo> kMilitary = {
       start: DateTime(2026, 9, 8),
       end: DateTime(2028, 3, 7),
       endEstimated: true),
-  'mingyu': const MilitaryInfo(MilitaryStatus.tba),
+  // 2026-09-10 入伍(替代役),2028 年 6 月結束(日期推估)
+  'mingyu': MilitaryInfo(MilitaryStatus.scheduled,
+      start: DateTime(2026, 9, 10),
+      end: DateTime(2028, 6, 9),
+      endEstimated: true),
   // 中國籍,無兵役義務
   'the8': const MilitaryInfo(MilitaryStatus.notRequired),
-  'seungkwan': const MilitaryInfo(MilitaryStatus.tba),
+  // 2026-10-26 入伍(陸軍軍樂隊),2028 年 4 月退伍(日期推估)
+  'seungkwan': MilitaryInfo(MilitaryStatus.scheduled,
+      start: DateTime(2026, 10, 26),
+      end: DateTime(2028, 4, 25),
+      endEstimated: true),
   // 2026-08-20 入伍(替代役),退伍日推估 21 個月
   'vernon': MilitaryInfo(MilitaryStatus.scheduled,
       start: DateTime(2026, 8, 20),
       end: DateTime(2028, 5, 19),
       endEstimated: true),
-  'dino': const MilitaryInfo(MilitaryStatus.tba),
+  // 2026-10-26 入伍(陸軍軍樂隊,與勝寬同日),2028 年 4 月退伍(日期推估)
+  'dino': MilitaryInfo(MilitaryStatus.scheduled,
+      start: DateTime(2026, 10, 26),
+      end: DateTime(2028, 4, 25),
+      endEstimated: true),
 };
 
 Member? memberById(String? id) {
