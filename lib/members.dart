@@ -20,6 +20,53 @@ const List<Member> kMembers = [
   Member(id: 'dino', nameEn: 'Dino', nameKo: '디노', nameZh: '李燦', birthMonth: 2, birthDay: 11, color: Color(0xFF9575CD)),
 ];
 
+/// 兵役狀態(2026-08 更新;來源:Pledis 公告/媒體報導)
+enum MilitaryStatus { serving, scheduled, discharged, exempt, notRequired, tba }
+
+class MilitaryInfo {
+  final MilitaryStatus status;
+  final DateTime? start;
+  final DateTime? end;
+  final bool endEstimated; // 退伍日為推估(官方未公布)
+  const MilitaryInfo(this.status, {this.start, this.end, this.endEstimated = false});
+}
+
+final Map<String, MilitaryInfo> kMilitary = {
+  // 免役(膝傷判定 5 級)
+  'scoups': const MilitaryInfo(MilitaryStatus.exempt),
+  // 2024-09-26 入伍(社會服務),2026-06-26 退伍
+  'jeonghan': MilitaryInfo(MilitaryStatus.discharged,
+      start: DateTime(2024, 9, 26), end: DateTime(2026, 6, 26)),
+  // 美國籍,無兵役義務
+  'joshua': const MilitaryInfo(MilitaryStatus.notRequired),
+  // 中國籍,無兵役義務
+  'jun': const MilitaryInfo(MilitaryStatus.notRequired),
+  // 現役陸軍 2025-09-16 ~ 2027-03-15
+  'hoshi': MilitaryInfo(MilitaryStatus.serving,
+      start: DateTime(2025, 9, 16), end: DateTime(2027, 3, 15)),
+  // 社會服務 2025-04-03 ~ 2027-01-02
+  'wonwoo': MilitaryInfo(MilitaryStatus.serving,
+      start: DateTime(2025, 4, 3), end: DateTime(2027, 1, 2)),
+  // 現役 2025-09-15 ~ 2027-03-14
+  'woozi': MilitaryInfo(MilitaryStatus.serving,
+      start: DateTime(2025, 9, 15), end: DateTime(2027, 3, 14)),
+  // 2026-09-08 入伍(現役陸軍),退伍日推估 18 個月
+  'dk': MilitaryInfo(MilitaryStatus.scheduled,
+      start: DateTime(2026, 9, 8),
+      end: DateTime(2028, 3, 7),
+      endEstimated: true),
+  'mingyu': const MilitaryInfo(MilitaryStatus.tba),
+  // 中國籍,無兵役義務
+  'the8': const MilitaryInfo(MilitaryStatus.notRequired),
+  'seungkwan': const MilitaryInfo(MilitaryStatus.tba),
+  // 2026-08-20 入伍(替代役),退伍日推估 21 個月
+  'vernon': MilitaryInfo(MilitaryStatus.scheduled,
+      start: DateTime(2026, 8, 20),
+      end: DateTime(2028, 5, 19),
+      endEstimated: true),
+  'dino': const MilitaryInfo(MilitaryStatus.tba),
+};
+
 Member? memberById(String? id) {
   if (id == null) return null;
   for (final m in kMembers) {

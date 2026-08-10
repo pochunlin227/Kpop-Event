@@ -335,6 +335,69 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 }
 
+/// 兵役狀態小徽章;不需顯示的成員回傳 null
+Widget? militaryBadge(Member m, DateTime now) {
+  final info = kMilitary[m.id];
+  if (info == null) return null;
+  final today = DateTime(now.year, now.month, now.day);
+
+  var status = info.status;
+  // 已過入伍日 → 服役中;已過退伍日 → 退伍
+  if (status == MilitaryStatus.scheduled &&
+      info.start != null &&
+      !today.isBefore(info.start!)) {
+    status = MilitaryStatus.serving;
+  }
+  if (status == MilitaryStatus.serving &&
+      info.end != null &&
+      today.isAfter(info.end!)) {
+    status = MilitaryStatus.discharged;
+  }
+
+  final (IconData, String, Color)? badge = switch (status) {
+    MilitaryStatus.serving when info.end != null => (
+        Icons.shield_outlined,
+        '退伍${info.endEstimated ? '≈' : ''}D-${info.end!.difference(today).inDays}',
+        const Color(0xFFA5D6A7),
+      ),
+    MilitaryStatus.serving => (
+        Icons.shield_outlined,
+        '服役中',
+        const Color(0xFFA5D6A7),
+      ),
+    MilitaryStatus.scheduled => (
+        Icons.event_note,
+        '入伍D-${info.start!.difference(today).inDays}',
+        Colors.orangeAccent,
+      ),
+    MilitaryStatus.discharged => (Icons.military_tech, '已退伍', kGold),
+    _ => null,
+  };
+  if (badge == null) return null;
+  final (icon, text, color) = badge;
+  return Container(
+    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+    decoration: BoxDecoration(
+      color: color.withValues(alpha: 0.14),
+      borderRadius: BorderRadius.circular(8),
+      border: Border.all(color: color.withValues(alpha: 0.45), width: 0.8),
+    ),
+    child: Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Icon(icon, size: 10, color: color),
+        const SizedBox(width: 3),
+        Flexible(
+          child: Text(text,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                  fontSize: 10, fontWeight: FontWeight.bold, color: color)),
+        ),
+      ],
+    ),
+  );
+}
+
 /// 上方橫向的成員生日倒數卡片
 class _BirthdayStrip extends StatelessWidget {
   final DateTime now;
@@ -345,7 +408,7 @@ class _BirthdayStrip extends StatelessWidget {
     final sorted = [...kMembers]..sort(
         (a, b) => a.daysUntilBirthday(now).compareTo(b.daysUntilBirthday(now)));
     return SizedBox(
-      height: 176,
+      height: 196,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -388,6 +451,11 @@ class _BirthdayStrip extends StatelessWidget {
                     ],
                   ),
                   const Spacer(),
+                  if (militaryBadge(m, now) case final badge?)
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 3),
+                      child: badge,
+                    ),
                   isToday
                       ? const GradientText('今天生日!',
                           fontSize: 13, colors: [kRoseQuartz, kGold])
