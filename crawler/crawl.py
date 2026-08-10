@@ -105,7 +105,13 @@ REGION_HINTS = {
 # 購物/二手/舊文等雜訊來源
 DOMAIN_BLOCKLIST = ["shopee.tw", "coupang", "ruten.com", "carousell",
                     "dcard.tw", "pinterest.", "youtube.com",
-                    "etsy.com", "bunjang", "ebay.", "amazon."]
+                    "etsy.com", "bunjang", "ebay.", "amazon.",
+                    # 廣告轉址(真實網址被編碼藏在參數裡,擋掉整類)
+                    "bing.com/aclick", "duckduckgo.com/y.js",
+                    "googleadservices", "doubleclick", "onelink.me"]
+
+# 標題含購物廣告用語的直接跳過
+NOISE_TITLE_WORDS = ["特價", "購物網", "免運", "優惠碼", "折扣碼", "今日下殺", "拍賣"]
 
 
 def fetch(url: str) -> str:
@@ -375,6 +381,8 @@ def main():
             if not title or not url or url in known_urls:
                 continue
             if any(d in url for d in DOMAIN_BLOCKLIST):
+                continue
+            if any(w in title for w in NOISE_TITLE_WORDS):
                 continue
             # 標題只是網址/網域的沒資訊量,跳過
             if re.fullmatch(r"(https?://)?[\w.\-]+(\.\w{2,})(/\S*)?", title):
