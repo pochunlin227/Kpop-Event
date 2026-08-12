@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="SEVENTEEN 生日咖啡廳應援活動雷達">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="kpop_event">
+  <meta name="apple-mobile-web-app-title" content="SVT 生咖雷達">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>kpop_event</title>
+  <title>SVT 生咖雷達</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- 提前下載字型,與引擎載入並行 -->
+  <link rel="preload" href="assets/fonts/NotoSansTC-Regular.otf" as="fetch" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/fonts/NotoSansKR-Regular.otf" as="fetch" type="font/otf" crossorigin>
+
+  <style>
+    html, body { margin: 0; padding: 0; height: 100%; }
+    /* App 載入前的等待畫面:配色與 App 星空背景一致 */
+    #splash {
+      position: fixed; inset: 0; z-index: 999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #0B1026 0%, #1C1B3A 40%, #35204A 75%, #241B3A 100%);
+      color: #cfc6e8;
+      font-family: -apple-system, "PingFang TC", "Noto Sans TC", "Malgun Gothic", sans-serif;
+      transition: opacity .4s ease;
+    }
+    #splash .gem { font-size: 44px; animation: pulse 1.4s ease-in-out infinite; }
+    #splash .title { margin-top: 14px; font-size: 17px; font-weight: 600; letter-spacing: 1px; }
+    #splash .hint { margin-top: 8px; font-size: 12px; opacity: .65; }
+    #splash .bar {
+      margin-top: 18px; width: 160px; height: 3px; border-radius: 3px;
+      background: rgba(255,255,255,.14); overflow: hidden;
+    }
+    #splash .bar::after {
+      content: ""; display: block; height: 100%; width: 40%;
+      border-radius: 3px;
+      background: linear-gradient(90deg, #F7CAC9, #92A8D1);
+      animation: slide 1.2s ease-in-out infinite;
+    }
+    @keyframes pulse { 0%,100% { transform: scale(1); opacity: .85; } 50% { transform: scale(1.15); opacity: 1; } }
+    @keyframes slide { 0% { margin-left: -40%; } 100% { margin-left: 100%; } }
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
+  <div id="splash">
+    <div class="gem">💎</div>
+    <div class="title">SVT 生咖雷達</div>
+    <div class="hint">載入中，第一次開啟需要一點時間…</div>
+    <div class="bar"></div>
+  </div>
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
+  <script>
+    // Flutter 畫出第一幀後移除等待畫面
+    window.addEventListener('flutter-first-frame', function () {
+      var s = document.getElementById('splash');
+      if (s) { s.style.opacity = '0'; setTimeout(function () { s.remove(); }, 450); }
+    });
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
