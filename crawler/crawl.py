@@ -428,9 +428,9 @@ def main():
         return
 
     existing["events"].extend(found)
-    enriched = enrich_accupass(existing["events"])
-    if not found and not enriched:
-        return
+    enrich_accupass(existing["events"])
+    # 沒有新資料也更新時間戳:App 顯示的「資料更新」代表上次檢查時間,
+    # 讓使用者能確認排程有在跑
     existing["updatedAt"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     EVENTS_FILE.parent.mkdir(parents=True, exist_ok=True)
     EVENTS_FILE.write_text(json.dumps(existing, ensure_ascii=False, indent=2), encoding="utf-8")

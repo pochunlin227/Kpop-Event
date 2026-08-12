@@ -194,7 +194,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     _sectionTitle('生日咖啡廳活動',
                         trailing: _updatedAt == null
                             ? null
-                            : '資料更新:${DateFormat('M/d HH:mm').format(_updatedAt!.toLocal())}'),
+                            : '資料檢查:${DateFormat('M/d HH:mm').format(_updatedAt!.toLocal())}'),
                     _buildFilters(),
                     const SizedBox(height: 4),
                     if (visible.isEmpty)

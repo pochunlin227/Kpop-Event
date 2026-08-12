@@ -1064,7 +1064,82 @@
       "sourceUrl": "https://allevents.in/san-jose/free-winter-caratland-seventeen-cupsleeve-and-k-pop-marketplace/100001974949596407",
       "source": "web",
       "foundAt": "2026-08-10T16:46:53Z"
+    },
+    {
+      "id": "e055636b6e90",
+      "title": "2026 세븐틴 원우 생카 (생일카페) | Won Sweet Bite",
+      "member": "wonwoo",
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.offmate.kr/place/birthday-cafe/detail/14562",
+      "source": "web",
+      "foundAt": "2026-08-11T03:05:45Z"
+    },
+    {
+      "id": "15a62d6f3bdb",
+      "title": "#seventeencupsleeveevent - TikTok",
+      "member": null,
+      "region": null,
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.tiktok.com/tag/seventeencupsleeveevent",
+      "source": "web",
+      "foundAt": "2026-08-11T03:22:37Z"
+    },
+    {
+      "id": "9124f5f36a06",
+      "title": "[이벤트] 매머드커피 몰티즈&리트리버 컵홀더 인증샷 이벤트 - 네이버...",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://m.blog.naver.com/mamcoffee2/224347087034",
+      "source": "web",
+      "foundAt": "2026-08-12T02:08:26Z"
+    },
+    {
+      "id": "7e8cad46a356",
+      "title": "Seventeen SCoups Birthday Cafe Visit: Coffee and Framed Memories...",
+      "member": "scoups",
+      "region": null,
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.tiktok.com/@halilieunice/video/7671857130911108372",
+      "source": "web",
+      "foundAt": "2026-08-12T02:08:36Z"
+    },
+    {
+      "id": "11366575e65e",
+      "title": "[BUNJANG] Seventeen S.Coups Birthday Cafe Cup Holder / 세븐틴 에...",
+      "member": "scoups",
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://hallyusuperstore.com/products/seventeen-scoups-birthday-cafe-cup-holder-390351794",
+      "source": "web",
+      "foundAt": "2026-08-12T02:10:02Z"
     }
   ],
-  "updatedAt": "2026-08-10T16:48:17Z"
+  "updatedAt": "2026-08-12T02:10:19Z"
 }
