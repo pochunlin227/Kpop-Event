@@ -39,18 +39,18 @@ jobs:
             git push
           fi
 
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-
-      - name: 建置 Flutter Web
+      # 網頁版是輕量靜態頁(web_static/),在 LINE/IG 等內建瀏覽器也能秒開;
+      # Flutter 程式碼保留給 iOS/Android 原生 App 使用
+      - name: 組裝靜態網站
         run: |
-          flutter pub get
-          flutter build web --release --base-href "/${{ github.event.repository.name }}/"
+          mkdir -p out/data
+          cp web_static/index.html out/
+          cp -r assets/avatars out/avatars
+          cp data/events.json out/data/events.json
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: build/web
+          path: out
       - id: deployment
         uses: actions/deploy-pages@v4

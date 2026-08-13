@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="SEVENTEEN 生日咖啡廳應援活動雷達:台灣、韓國、美國、新加坡生咖資訊自動彙整">
+<title>SVT 生咖雷達</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💎</text></svg>">
+<style>
+  :root {
+    --rose: #F7CAC9; --serenity: #92A8D1; --gold: #E8C87E;
+    --card: rgba(255,255,255,.07); --line: rgba(255,255,255,.18);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    min-height: 100vh; color: #fff;
+    background: linear-gradient(135deg,#0B1026 0%,#1C1B3A 40%,#35204A 75%,#241B3A 100%) fixed;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC",
+                 "Microsoft JhengHei", "Malgun Gothic", sans-serif;
+  }
+  #stars { position: fixed; inset: 0; z-index: 0; pointer-events: none; }
+  main { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 0 14px 48px; }
+  header { text-align: center; padding: 18px 0 4px; }
+  header h1 {
+    margin: 0; font-size: 22px; font-weight: 800;
+    background: linear-gradient(90deg,var(--rose),var(--serenity),var(--gold));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h2 {
+    font-size: 17px; margin: 22px 0 10px; font-weight: 700; display: flex; align-items: center; gap: 6px;
+    background: linear-gradient(90deg,var(--rose),var(--serenity));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  h2 .meta { margin-left: auto; font-size: 11px; font-weight: 400; color: rgba(255,255,255,.38); }
+  /* 生日倒數 */
+  .strip { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .strip::-webkit-scrollbar { display: none; }
+  .bday {
+    flex: 0 0 116px; border: 1px solid var(--line); border-radius: 18px;
+    background: var(--card); padding: 12px 10px; text-align: center;
+  }
+  .bday.glow { box-shadow: 0 0 18px var(--glow, rgba(247,202,201,.35)); border-color: var(--glow, var(--rose)); }
+  .bday .ava {
+    width: 68px; height: 68px; margin: 0 auto 8px; border-radius: 50%; padding: 2.5px;
+    background: conic-gradient(var(--mc), #fff, var(--mc), var(--serenity), var(--mc));
+  }
+  .bday .ava img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; background: #241B3A; }
+  .bday .nm { font-weight: 700; font-size: 13px; }
+  .bday .sub { font-size: 10.5px; color: rgba(255,255,255,.5); margin: 2px 0 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bday .dt { font-size: 12px; font-weight: 700; }
+  .bday .dt .md { color: var(--mc); margin-right: 4px; }
+  .mil {
+    display: inline-block; font-size: 9.5px; font-weight: 700; padding: 2px 7px; border-radius: 8px;
+    border: 1px solid; margin-bottom: 5px;
+  }
+  .mil.serve { color: #A5D6A7; border-color: rgba(165,214,167,.45); background: rgba(165,214,167,.13); }
+  .mil.sched { color: #FFB74D; border-color: rgba(255,183,77,.5); background: rgba(255,183,77,.12); }
+  .mil.done  { color: var(--gold); border-color: rgba(232,200,126,.5); background: rgba(232,200,126,.12); }
+  /* 篩選 */
+  .chips { display: flex; gap: 6px; overflow-x: auto; padding: 3px 2px 8px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .chip {
+    flex: 0 0 auto; font-size: 12.5px; padding: 6px 13px; border-radius: 18px; cursor: pointer;
+    color: rgba(255,255,255,.72); background: rgba(255,255,255,.06); border: 1px solid var(--line);
+    -webkit-tap-highlight-color: transparent; user-select: none;
+  }
+  .chip.on { color: #fff; font-weight: 700; background: rgba(146,168,209,.38); border-color: rgba(146,168,209,.9); }
+  /* 活動卡片 */
+  .card {
+    border: 1px solid var(--line); border-radius: 18px; background: var(--card);
+    padding: 13px 14px; margin-bottom: 11px; display: block; color: inherit; text-decoration: none;
+  }
+  .card.glow { box-shadow: 0 0 16px rgba(247,202,201,.22); border-color: rgba(247,202,201,.4); }
+  .card.dim { opacity: .6; }
+  .tags { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-bottom: 8px; }
+  .tag { font-size: 10.5px; font-weight: 700; padding: 2.5px 9px; border-radius: 12px; border: 1px solid; }
+  .src { margin-left: auto; font-size: 10px; padding: 2px 7px; border-radius: 6px; border: 1px solid; font-weight: 400; }
+  .card .tt { font-size: 15px; font-weight: 600; line-height: 1.45; margin-bottom: 6px; }
+  .card .info { font-size: 12.5px; color: rgba(255,255,255,.7); margin: 3px 0; }
+  .card .info .ic { color: rgba(146,168,209,.85); margin-right: 5px; }
+  .card .foot { display: flex; font-size: 11px; margin-top: 7px; color: rgba(255,255,255,.38); }
+  .card .foot .go { margin-left: auto; color: var(--serenity); }
+  /* 歷史區 */
+  #histHead {
+    display: flex; align-items: center; gap: 6px; padding: 12px 6px; cursor: pointer;
+    color: rgba(255,255,255,.55); font-size: 14px; font-weight: 600; user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #histHead .arr { margin-left: auto; transition: transform .2s; }
+  #histHead.open .arr { transform: rotate(90deg); }
+  .empty { text-align: center; color: rgba(255,255,255,.5); padding: 36px 0; font-size: 14px; line-height: 1.8; }
+  footer { text-align: center; font-size: 11px; color: rgba(255,255,255,.3); margin-top: 30px; line-height: 1.8; }
+  footer a { color: rgba(146,168,209,.7); }
+</style>
+</head>
+<body>
+<canvas id="stars"></canvas>
+<main>
+  <header><h1>💎 SVT 生咖雷達</h1></header>
+
+  <h2>✦ 生日倒數</h2>
+  <div class="strip" id="bdays"></div>
+
+  <h2>✦ 生日咖啡廳活動 <span class="meta" id="updated"></span></h2>
+  <div class="chips" id="memberChips"></div>
+  <div class="chips" id="regionChips"></div>
+  <div id="events"></div>
+
+  <div id="histHead" hidden>
+    <span>🕰</span><span id="histLabel">歷史活動</span><span class="arr">›</span>
+  </div>
+  <div id="histBody" hidden>
+    <div class="chips" id="yearChips"></div>
+    <div id="histEvents"></div>
+  </div>
+
+  <footer>
+    每日自動蒐集台灣・韓國・美國・新加坡的 SEVENTEEN 生咖資訊<br>
+    活動內容請以主辦方公告為準 · <a href="https://github.com/pochunlin227/Kpop-Event" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+</main>
+
+<script>
+"use strict";
+/* ============ 成員資料 ============ */
+const MEMBERS = [
+  { id:"scoups",    en:"S.Coups",   zh:"崔勝澈", ko:"에스쿱스", m:8,  d:8,  c:"#E57373", mil:{st:"exempt"} },
+  { id:"jeonghan",  en:"Jeonghan",  zh:"尹淨漢", ko:"정한",     m:10, d:4,  c:"#BA68C8", mil:{st:"discharged", end:"2026-06-26"} },
+  { id:"joshua",    en:"Joshua",    zh:"洪知秀", ko:"조슈아",   m:12, d:30, c:"#64B5F6", mil:{st:"none"} },
+  { id:"jun",       en:"Jun",       zh:"文俊輝", ko:"준",       m:6,  d:10, c:"#4DB6AC", mil:{st:"none"} },
+  { id:"hoshi",     en:"Hoshi",     zh:"權順榮", ko:"호시",     m:6,  d:15, c:"#FFB74D", mil:{st:"serving", start:"2025-09-16", end:"2027-03-15"} },
+  { id:"wonwoo",    en:"Wonwoo",    zh:"全圓佑", ko:"원우",     m:7,  d:17, c:"#7986CB", mil:{st:"serving", start:"2025-04-03", end:"2027-01-02"} },
+  { id:"woozi",     en:"Woozi",     zh:"李知勳", ko:"우지",     m:11, d:22, c:"#F06292", mil:{st:"serving", start:"2025-09-15", end:"2027-03-14"} },
+  { id:"dk",        en:"DK",        zh:"李碩珉", ko:"도겸",     m:2,  d:18, c:"#FFD54F", mil:{st:"scheduled", start:"2026-09-08", end:"2028-03-07", est:true} },
+  { id:"mingyu",    en:"Mingyu",    zh:"金珉奎", ko:"민규",     m:4,  d:6,  c:"#A1887F", mil:{st:"scheduled", start:"2026-09-10", end:"2028-06-09", est:true} },
+  { id:"the8",      en:"The8",      zh:"徐明浩", ko:"디에잇",   m:11, d:7,  c:"#90A4AE", mil:{st:"none"} },
+  { id:"seungkwan", en:"Seungkwan", zh:"夫勝寬", ko:"승관",     m:1,  d:16, c:"#81C784", mil:{st:"scheduled", start:"2026-10-26", end:"2028-04-25", est:true} },
+  { id:"vernon",    en:"Vernon",    zh:"崔韓率", ko:"버논",     m:2,  d:18, c:"#4FC3F7", mil:{st:"scheduled", start:"2026-08-20", end:"2028-05-19", est:true} },
+  { id:"dino",      en:"Dino",      zh:"李燦",   ko:"디노",     m:2,  d:11, c:"#9575CD", mil:{st:"scheduled", start:"2026-10-26", end:"2028-04-25", est:true} },
+];
+const REGIONS = { TW:"台灣", KR:"韓國", US:"美國", SG:"新加坡", JP:"日本" };
+const SOURCES = {
+  stellar:  ["生咖地圖", "#F48FB1"], accupass: ["報名頁", "#E8C87E"],
+  threads:  ["Threads", "#DDD"],     instagram:["IG", "#CE93D8"],
+  news:     ["新聞", "#9FA8DA"],     web:      ["網頁", "#999"],
+};
+
+/* ============ 小工具 ============ */
+const $ = (id) => document.getElementById(id);
+const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" }[c]));
+const today = () => { const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), n.getDate()); };
+const days = (a, b) => Math.round((a - b) / 864e5);
+const pd = (s) => (s ? new Date(s + (s.length === 10 ? "T00:00:00" : "")) : null);
+const md = (dt) => `${dt.getMonth() + 1}/${dt.getDate()}`;
+
+/* ============ 星空 ============ */
+(() => {
+  const cv = $("stars"), ctx = cv.getContext("2d");
+  let stars = [];
+  const resize = () => {
+    cv.width = innerWidth; cv.height = innerHeight;
+    stars = Array.from({ length: 90 }, () => ({
+      x: Math.random() * cv.width, y: Math.random() * cv.height,
+      r: 0.4 + Math.random() * 1.3, p: Math.random() * Math.PI * 2, s: 0.4 + Math.random() * 1.2,
+      big: Math.random() < 0.07,
+    }));
+  };
+  resize(); addEventListener("resize", resize);
+  (function draw(t) {
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    for (const st of stars) {
+      const tw = 0.5 + 0.5 * Math.sin(t / 1000 * st.s + st.p);
+      ctx.globalAlpha = 0.15 + 0.55 * tw;
+      ctx.fillStyle = st.big ? "#F7CAC9" : "#fff";
+      ctx.beginPath();
+      ctx.arc(st.x, st.y, st.r * (st.big ? 2.2 : 1), 0, 7);
+      ctx.fill();
+    }
+    requestAnimationFrame(draw);
+  })(0);
+})();
+
+/* ============ 兵役徽章 ============ */
+function milBadge(mil) {
+  if (!mil || mil.st === "none" || mil.st === "exempt") return "";
+  const t = today();
+  let st = mil.st;
+  const start = pd(mil.start), end = pd(mil.end);
+  if (st === "scheduled" && start && t >= start) st = "serving";
+  if (st === "serving" && end && t > end) st = "discharged";
+  if (st === "discharged") return `<span class="mil done">🎖 已退伍</span>`;
+  if (st === "serving")
+    return end ? `<span class="mil serve">🛡 退伍${mil.est ? "≈" : ""}D-${days(end, t)}</span>`
+               : `<span class="mil serve">🛡 服役中</span>`;
+  if (st === "scheduled") return `<span class="mil sched">📋 入伍D-${days(start, t)}</span>`;
+  return "";
+}
+
+/* ============ 生日倒數 ============ */
+function renderBirthdays() {
+  const t = today();
+  const list = MEMBERS.map((mb) => {
+    let next = new Date(t.getFullYear(), mb.m - 1, mb.d);
+    if (next < t) next = new Date(t.getFullYear() + 1, mb.m - 1, mb.d);
+    return { ...mb, left: days(next, t) };
+  }).sort((a, b) => a.left - b.left);
+  $("bdays").innerHTML = list.map((mb, i) => `
+    <div class="bday${i === 0 || mb.left === 0 ? " glow" : ""}" style="--mc:${mb.c};--glow:${mb.c}55">
+      <div class="ava"><img src="avatars/${mb.id}.jpg" alt="${mb.en}" loading="lazy"
+        onerror="this.style.display='none'"></div>
+      <div class="nm">${mb.en}${i === 0 ? " ✦" : ""}</div>
+      <div class="sub">${mb.zh}・${mb.ko}</div>
+      ${milBadge(mb.mil)}
+      <div class="dt">${mb.left === 0 ? "🎂 今天生日!" : `<span class="md">${mb.m}/${mb.d}</span>還有 ${mb.left} 天`}</div>
+    </div>`).join("");
+}
+
+/* ============ 活動 ============ */
+let EVENTS = [], memberFilter = null, regionFilter = null, yearFilter = null, histOpen = false;
+
+function bucket(e, t) {
+  const end = pd(e.eventEnd), start = pd(e.eventStart);
+  const endIncl = end ? new Date(+end + 864e5) : null;
+  if (endIncl && t >= endIncl) return 3;
+  if (!start) return 2;
+  if (t >= start) return 0;
+  return 1;
+}
+function statusBadge(e, t) {
+  const ss = pd(e.signupStart), se = pd(e.signupEnd), es = pd(e.eventStart), ee = pd(e.eventEnd);
+  const seIncl = se ? new Date(+se + 864e5) : null, eeIncl = ee ? new Date(+ee + 864e5) : null;
+  if (ss && t < ss) return ["報名即將開始", "#FFB74D"];
+  if (ss && seIncl && t >= ss && t < seIncl) return ["報名中", "#69F0AE"];
+  if (eeIncl && t >= eeIncl) return ["已結束", "#9E9E9E"];
+  if (es && eeIncl && t >= es && t < eeIncl) return ["活動進行中", "#FF4081"];
+  if (es && t < es) return ["即將舉辦", "#40C4FF"];
+  return ["待確認詳情", "#90A4AE"];
+}
+function card(e, t, dim) {
+  const [label, color] = statusBadge(e, t);
+  const mb = MEMBERS.find((m) => m.id === e.member);
+  const [srcLabel, srcColor] = SOURCES[e.source] || SOURCES.web;
+  const active = label === "活動進行中" || label === "報名中";
+  const es = pd(e.eventStart), ee = pd(e.eventEnd), ss = pd(e.signupStart), se = pd(e.signupEnd);
+  const fd = pd(e.foundAt);
+  let info = "";
+  if (es) info += `<div class="info"><span class="ic">✦</span>活動:${md(es)}${ee && +ee !== +es ? " ~ " + md(ee) : ""}</div>`;
+  if (ss) info += `<div class="info"><span class="ic">✎</span>報名:${md(ss)}${se ? " ~ " + md(se) : ""}</div>`;
+  if (e.location) info += `<div class="info"><span class="ic">📍</span>${esc(e.location)}</div>`;
+  return `<a class="card${active ? " glow" : ""}${dim ? " dim" : ""}" href="${esc(e.sourceUrl)}" target="_blank" rel="noopener">
+    <div class="tags">
+      <span class="tag" style="color:${color};border-color:${color}88;background:${color}22">${label}</span>
+      ${mb ? `<span class="tag" style="color:${mb.c};border-color:${mb.c}88;background:${mb.c}22">${mb.en}</span>` : ""}
+      ${e.region ? `<span class="tag" style="color:#7BD8C2;border-color:#7BD8C288;background:#7BD8C222">${REGIONS[e.region] || e.region}</span>` : ""}
+      <span class="src" style="color:${srcColor};border-color:${srcColor}66">${srcLabel}</span>
+    </div>
+    <div class="tt">${esc(e.title)}</div>
+    ${info}
+    <div class="foot">${fd ? `發現於 ${md(fd)}` : ""}<span class="go">查看來源 →</span></div>
+  </a>`;
+}
+function applyFilter(list) {
+  return list.filter((e) =>
+    (!memberFilter || e.member === memberFilter) && (!regionFilter || e.region === regionFilter));
+}
+function renderEvents() {
+  const t = today();
+  const sorted = [...EVENTS].sort((a, b) => {
+    const bk = bucket(a, t) - bucket(b, t);
+    if (bk) return bk;
+    const as = pd(a.eventStart), bs = pd(b.eventStart);
+    if (as && bs) return as - bs;
+    return (pd(b.foundAt) || 0) - (pd(a.foundAt) || 0);
+  });
+  const cur = applyFilter(sorted.filter((e) => bucket(e, t) !== 3));
+  const hist = applyFilter(sorted.filter((e) => bucket(e, t) === 3));
+  $("events").innerHTML = cur.length
+    ? cur.map((e) => card(e, t, false)).join("")
+    : `<div class="empty">目前沒有符合條件的活動<br>爬蟲每天早上會自動搜尋新活動!</div>`;
+
+  const hh = $("histHead");
+  hh.hidden = !hist.length;
+  $("histLabel").textContent = `歷史活動 (${hist.length})`;
+  hh.classList.toggle("open", histOpen);
+  $("histBody").hidden = !histOpen || !hist.length;
+  if (histOpen && hist.length) {
+    const years = [...new Set(hist.map((e) => (pd(e.eventEnd) || pd(e.eventStart) || pd(e.foundAt) || new Date(2000, 0)).getFullYear()))].sort((a, b) => b - a);
+    $("yearChips").innerHTML =
+      `<span class="chip${yearFilter == null ? " on" : ""}" data-y="">全部年份</span>` +
+      years.map((y) => `<span class="chip${yearFilter === y ? " on" : ""}" data-y="${y}">${y}</span>`).join("");
+    for (const ch of $("yearChips").children)
+      ch.onclick = () => { yearFilter = ch.dataset.y ? +ch.dataset.y : null; renderEvents(); };
+    const shown = hist.filter((e) => yearFilter == null ||
+      (pd(e.eventEnd) || pd(e.eventStart) || pd(e.foundAt) || new Date(2000, 0)).getFullYear() === yearFilter);
+    $("histEvents").innerHTML = shown.length
+      ? shown.map((e) => card(e, t, true)).join("")
+      : `<div class="empty">這一年沒有紀錄</div>`;
+  }
+}
+function renderChips() {
+  $("memberChips").innerHTML =
+    `<span class="chip${!memberFilter ? " on" : ""}" data-m="">全部成員</span>` +
+    MEMBERS.map((mb) => `<span class="chip${memberFilter === mb.id ? " on" : ""}" data-m="${mb.id}">${mb.en}</span>`).join("");
+  for (const ch of $("memberChips").children)
+    ch.onclick = () => { memberFilter = ch.dataset.m || null; renderChips(); renderEvents(); };
+  $("regionChips").innerHTML =
+    `<span class="chip${!regionFilter ? " on" : ""}" data-r="">全部地區</span>` +
+    ["TW", "KR", "US", "SG"].map((r) => `<span class="chip${regionFilter === r ? " on" : ""}" data-r="${r}">${REGIONS[r]}</span>`).join("");
+  for (const ch of $("regionChips").children)
+    ch.onclick = () => { regionFilter = ch.dataset.r || null; renderChips(); renderEvents(); };
+}
+$("histHead").onclick = () => { histOpen = !histOpen; renderEvents(); };
+
+/* ============ 啟動 ============ */
+renderBirthdays();
+renderChips();
+fetch("data/events.json?t=" + Date.now())
+  .then((r) => r.json())
+  .then((d) => {
+    EVENTS = d.events || [];
+    if (d.updatedAt) {
+      const u = new Date(d.updatedAt);
+      $("updated").textContent =
+        `資料檢查:${u.getMonth() + 1}/${u.getDate()} ${String(u.getHours()).padStart(2, "0")}:${String(u.getMinutes()).padStart(2, "0")}`;
+    }
+    renderEvents();
+  })
+  .catch(() => { $("events").innerHTML = `<div class="empty">資料載入失敗,請下拉重新整理</div>`; });
+</script>
+</body>
+</html>
