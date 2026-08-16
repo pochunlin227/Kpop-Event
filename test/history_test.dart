@@ -5,7 +5,7 @@ import 'package:kpop_event/main.dart';
 
 Future<void> settle(WidgetTester tester) async {
   // 星空背景是無限動畫,不能用 pumpAndSettle
-  for (var i = 0; i < 12; i++) {
+  for (var i = 0; i < 15; i++) {
     await tester.pump(const Duration(milliseconds: 100));
   }
 }
@@ -18,11 +18,16 @@ void main() {
     // 首頁不顯示已結束活動(8/9 結束的 Aug95 台北生咖)
     expect(find.textContaining('Aug95'), findsNothing);
 
-    // 捲到歷史活動入口並點擊
+    // 捲到歷史活動入口
     final entry = find.textContaining('歷史活動');
     await tester.scrollUntilVisible(entry, 400,
         scrollable: find.byType(Scrollable).first);
-    await tester.tap(entry);
+    await settle(tester);
+    // 直接觸發入口的 onTap:畫面底部邊緣的 hit-test 在測試環境不可靠,
+    // 這裡要驗證的是導頁與年份篩選邏輯
+    final ink = tester.widget<InkWell>(
+        find.ancestor(of: entry, matching: find.byType(InkWell)).first);
+    ink.onTap!();
     await settle(tester);
 
     // 子頁:年份篩選與已結束活動

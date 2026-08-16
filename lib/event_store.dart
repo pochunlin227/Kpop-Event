@@ -29,7 +29,11 @@ class EventStore {
         // 離線或抓取失敗 → 改用內建資料
       }
     }
-    final raw = await rootBundle.loadString('data/events.json');
+    // 不用 loadString:它對 >50KB 的檔案會走 isolate 解碼,
+    // 在 widget test 的 fake-async 環境下永遠不會完成
+    final bytes = await rootBundle.load('data/events.json');
+    final raw = utf8.decode(
+        bytes.buffer.asUint8List(bytes.offsetInBytes, bytes.lengthInBytes));
     final p = _parse(raw);
     return (events: p.events, updatedAt: p.updatedAt, fromRemote: false);
   }
