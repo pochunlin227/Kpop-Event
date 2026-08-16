@@ -106,6 +106,7 @@ REGION_HINTS = {
 DOMAIN_BLOCKLIST = ["shopee.tw", "coupang", "ruten.com", "carousell",
                     "dcard.tw", "pinterest.", "youtube.com",
                     "etsy.com", "bunjang", "ebay.", "amazon.",
+                    "hallyusuperstore", "theqoo.net",
                     # 廣告轉址(真實網址被編碼藏在參數裡,擋掉整類)
                     "bing.com/aclick", "duckduckgo.com/y.js",
                     "googleadservices", "doubleclick", "onelink.me"]
