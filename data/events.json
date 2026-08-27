@@ -1214,7 +1214,37 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQQTA3Y0xBdG9VM2RlZTk1WFE3MjlIQ2dXQ1o4M2lQVmpVV1M0WGNYSE1zR0I5bHZCbnFPd3dQWkZ0LW9FNGRQazRyS3NIWmZkN2xHSmU2am9vUG8tdVhGRUlhbVRONjExUTV1ZEx1N1Jjc3Bxd3NtUXBCcGp4eTVCb0hkSFpLQlg1Ukl4MUZERmRWanhrb1NjTkxKWGNibjVZN3JzU2hWOUxUZU0?oc=5",
       "source": "news",
       "foundAt": "2026-08-23T02:55:30Z"
+    },
+    {
+      "id": "5f3ef57c8dc3",
+      "title": "Hello!1996(s)",
+      "member": "jun",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-09-04",
+      "eventEnd": "2026-09-07",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · 無序 Unbound Cafe",
+      "sourceUrl": "https://www.stellar-zone.com/event/jun-hoshi-collab-2026-09-SDxVnV",
+      "source": "stellar",
+      "foundAt": "2026-08-27T12:10:36Z"
+    },
+    {
+      "id": "9ae9127726fa",
+      "title": "跟SEVENTEEN淨漢校園戀愛!生咖照片牆曝「暗戀女視角」超心動 - 三立新聞網SETN.com",
+      "member": "jeonghan",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA3ZXBSTmdFZzlYR3JUWDN4dWdyTldkZjNJSmFhNFpJaVhZVFNKQnV6NmR4ZjMwNGd5YlZXdHJwbE9McW8tSmk2c9IBTEFVX3lxTE42YWlzUTNxSVlXb1Y1ZV9Id0dOQ2tkcjN0LXFRejVHLWU4ODllOVozbHVxbFU4cHhPcURHNWtuMzQ4MWhNSEg1S3lEN0k?oc=5",
+      "source": "news",
+      "foundAt": "2026-08-27T12:12:34Z"
     }
   ],
-  "updatedAt": "2026-08-26T03:00:09Z"
+  "updatedAt": "2026-08-27T12:13:16Z"
 }
