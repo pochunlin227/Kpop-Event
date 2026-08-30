@@ -1244,7 +1244,37 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFA3ZXBSTmdFZzlYR3JUWDN4dWdyTldkZjNJSmFhNFpJaVhZVFNKQnV6NmR4ZjMwNGd5YlZXdHJwbE9McW8tSmk2c9IBTEFVX3lxTE42YWlzUTNxSVlXb1Y1ZV9Id0dOQ2tkcjN0LXFRejVHLWU4ODllOVozbHVxbFU4cHhPcURHNWtuMzQ4MWhNSEg1S3lEN0k?oc=5",
       "source": "news",
       "foundAt": "2026-08-27T12:12:34Z"
+    },
+    {
+      "id": "d5fa43992a13",
+      "title": "2026 Seventeen 生日咖啡廳 | Hongdae 16383 - dukplace.com",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://dukplace.com/tw/place/events/detail/16383",
+      "source": "web",
+      "foundAt": "2026-08-30T07:41:20Z"
+    },
+    {
+      "id": "8d43bb972e0e",
+      "title": "Seventeen Mingyu 生日應援活動 | Mingyu 生咖、生日應援活動 | Stellar 台灣生咖、生日應援地圖",
+      "member": "mingyu",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.stellar-zone.com/event/mingyu-2026-04-vvDCN3",
+      "source": "stellar",
+      "foundAt": "2026-08-30T07:41:20Z"
     }
   ],
-  "updatedAt": "2026-08-29T08:29:40Z"
+  "updatedAt": "2026-08-30T07:43:42Z"
 }
