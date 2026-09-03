@@ -1274,7 +1274,37 @@
       "sourceUrl": "https://www.stellar-zone.com/event/mingyu-2026-04-vvDCN3",
       "source": "stellar",
       "foundAt": "2026-08-30T07:41:20Z"
+    },
+    {
+      "id": "bdf9651df66e",
+      "title": "[商演] 南珉貞 2026 生日應援咖啡廳 - 看板CheerGirlsTW - PTT網頁版",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.pttweb.cc/bbs/CheerGirlsTW/M.1787897077.A.A5C",
+      "source": "web",
+      "foundAt": "2026-09-03T06:41:37Z"
+    },
+    {
+      "id": "218ef93fe641",
+      "title": "K-pop Birthday Cafe Seoul Guide for Foreigners — Honest 2026 Saeng-Ka ...",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://happinessinkorea.com/kpop-birthday-cafe-seoul-saengka-guide-foreigners-2026",
+      "source": "web",
+      "foundAt": "2026-09-03T06:41:37Z"
     }
   ],
-  "updatedAt": "2026-09-02T06:41:41Z"
+  "updatedAt": "2026-09-03T06:44:03Z"
 }
