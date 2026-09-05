@@ -1319,7 +1319,22 @@
       "sourceUrl": "https://www.instagram.com/p/DcqnJdhmMdd/",
       "source": "instagram",
       "foundAt": "2026-09-04T06:46:23Z"
+    },
+    {
+      "id": "75ca8f082a60",
+      "title": "2026 Seventeen 應援咖啡廳 | Hongdae 17186 - dukplace.com",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://dukplace.com/tw/place/events/detail/17186",
+      "source": "web",
+      "foundAt": "2026-09-05T06:31:57Z"
     }
   ],
-  "updatedAt": "2026-09-04T06:48:46Z"
+  "updatedAt": "2026-09-05T06:34:22Z"
 }
