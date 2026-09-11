@@ -1349,7 +1349,22 @@
       "sourceUrl": "https://tchinese.visitseoul.net/hallyu/BIRTHDAYCAFE/TCNwzx4ps",
       "source": "web",
       "foundAt": "2026-09-08T06:45:51Z"
+    },
+    {
+      "id": "2a5cd46ada74",
+      "title": "╭─ 1004번째 기적 ─╮ A Miracle Called 1004",
+      "member": "jeonghan",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-10-03",
+      "eventEnd": "2026-10-05",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "高雄市 · 桑桑SUN SUN",
+      "sourceUrl": "https://www.stellar-zone.com/event/jeonghan-2026-10-coVIeK",
+      "source": "stellar",
+      "foundAt": "2026-09-11T06:50:27Z"
     }
   ],
-  "updatedAt": "2026-09-10T06:53:36Z"
+  "updatedAt": "2026-09-11T06:53:33Z"
 }
