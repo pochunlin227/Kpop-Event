@@ -1364,7 +1364,22 @@
       "sourceUrl": "https://www.stellar-zone.com/event/jeonghan-2026-10-coVIeK",
       "source": "stellar",
       "foundAt": "2026-09-11T06:50:27Z"
+    },
+    {
+      "id": "f73b9f5a8f79",
+      "title": "SEVENTEEN Jeonghan Birthday Cafe Events in Hongdae | NOL World",
+      "member": "jeonghan",
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://world.nol.com/en/content/festas/019931dc-868a-7772-ac11-0a4be3442446",
+      "source": "web",
+      "foundAt": "2026-09-14T07:22:56Z"
     }
   ],
-  "updatedAt": "2026-09-13T07:02:44Z"
+  "updatedAt": "2026-09-14T07:25:18Z"
 }
