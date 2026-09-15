@@ -1379,7 +1379,37 @@
       "sourceUrl": "https://world.nol.com/en/content/festas/019931dc-868a-7772-ac11-0a4be3442446",
       "source": "web",
       "foundAt": "2026-09-14T07:22:56Z"
+    },
+    {
+      "id": "95367187d22d",
+      "title": "HAPPY JEONGHAN DAY 淨漢生日應援台南",
+      "member": "jeonghan",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-10-02",
+      "eventEnd": "2026-10-04",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺南市 · ami14朋友食室",
+      "sourceUrl": "https://www.stellar-zone.com/event/jeonghan-2026-10-5eJljF",
+      "source": "stellar",
+      "foundAt": "2026-09-15T06:59:00Z"
+    },
+    {
+      "id": "ebd5dfc748d6",
+      "title": "2026 JEONGHAN BIRTHDAY Jeonghan, Yoon my love.",
+      "member": "jeonghan",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-10-03",
+      "eventEnd": "2026-10-05",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · LivingRoom 客廳咖啡",
+      "sourceUrl": "https://www.stellar-zone.com/event/jeonghan-2026-10-wn0jC9",
+      "source": "stellar",
+      "foundAt": "2026-09-15T06:59:00Z"
     }
   ],
-  "updatedAt": "2026-09-14T07:25:18Z"
+  "updatedAt": "2026-09-15T07:01:42Z"
 }
