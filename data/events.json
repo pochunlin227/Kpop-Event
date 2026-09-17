@@ -1514,7 +1514,22 @@
       "sourceUrl": "https://x.com/cafe_NITA/status/2099427083961471067",
       "source": "web",
       "foundAt": "2026-09-16T07:01:45Z"
+    },
+    {
+      "id": "fff8c28b470a",
+      "title": "Happy Jeonghan Day! SEVENTEEN 尹淨漢 生日應援公告",
+      "member": "jeonghan",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-10-01",
+      "eventEnd": "2026-10-04",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · KAJIMA CAFE 가지마 카페 咖機馬 應援咖啡廳 / 生咖 / 手機租借",
+      "sourceUrl": "https://www.stellar-zone.com/event/jeonghan-2026-09-B3LNvl",
+      "source": "stellar",
+      "foundAt": "2026-09-17T06:56:08Z"
     }
   ],
-  "updatedAt": "2026-09-16T07:05:28Z"
+  "updatedAt": "2026-09-17T06:58:57Z"
 }
