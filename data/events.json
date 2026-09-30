@@ -1574,7 +1574,37 @@
       "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-dMct1E",
       "source": "stellar",
       "foundAt": "2026-09-27T07:22:07Z"
+    },
+    {
+      "id": "4b44c27ec86b",
+      "title": "Seventeen 周年應援活動 | Seventeen 生咖、生日應援活動 | Stellar 台灣生咖、生日應援地圖",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.stellar-zone.com/event/seventeen-2026-05-vSqDmC",
+      "source": "stellar",
+      "foundAt": "2026-09-30T07:44:13Z"
+    },
+    {
+      "id": "9fd6eee9da6a",
+      "title": "生日咖啡廳查找 · K-pop偶像應援活動地圖 - Dukplace",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://dukplace.com/tw/birthday-cafe",
+      "source": "web",
+      "foundAt": "2026-09-30T07:44:13Z"
     }
   ],
-  "updatedAt": "2026-09-29T07:45:08Z"
+  "updatedAt": "2026-09-30T07:47:34Z"
 }
