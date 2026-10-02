@@ -1724,7 +1724,22 @@
       "sourceUrl": "https://timetreeapp.com/public_calendars/svt_hbdcafe?locale=zh-TW",
       "source": "web",
       "foundAt": "2026-10-01T08:03:39Z"
+    },
+    {
+      "id": "bf9678be570e",
+      "title": "2026 JEONGHAN BIRTHDAY CAFE|HAPPY JEONGHAN DAY - WeKenGo",
+      "member": "jeonghan",
+      "region": null,
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://wekengo.tw/event/YGRTET/2026jeonghanbirthdaycafehappyjeonghanday",
+      "source": "web",
+      "foundAt": "2026-10-02T07:46:00Z"
     }
   ],
-  "updatedAt": "2026-10-01T08:07:01Z"
+  "updatedAt": "2026-10-02T07:49:24Z"
 }
