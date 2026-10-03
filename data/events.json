@@ -1739,7 +1739,37 @@
       "sourceUrl": "https://wekengo.tw/event/YGRTET/2026jeonghanbirthdaycafehappyjeonghanday",
       "source": "web",
       "foundAt": "2026-10-02T07:46:00Z"
+    },
+    {
+      "id": "9e560f18feec",
+      "title": "95z Spectrum Club",
+      "member": "scoups",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-10-24",
+      "eventEnd": "2026-10-26",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺中市 · Uni cafe 與你咖啡",
+      "sourceUrl": "https://www.stellar-zone.com/event/scoups-jeonghan-collab-2026-10-xqtDtu",
+      "source": "stellar",
+      "foundAt": "2026-10-03T07:19:57Z"
+    },
+    {
+      "id": "12a10f3086d2",
+      "title": "SEVENTEEN 11th Anniversary exhibition | Seventeen 生咖、生日應援活動",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.stellar-zone.com/event/seventeen-2026-05-F9vxda",
+      "source": "stellar",
+      "foundAt": "2026-10-03T07:20:22Z"
     }
   ],
-  "updatedAt": "2026-10-02T07:49:24Z"
+  "updatedAt": "2026-10-03T07:23:42Z"
 }
