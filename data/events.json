@@ -1844,7 +1844,82 @@
       "sourceUrl": "https://www.instagram.com/p/DdbXrlyigyE/",
       "source": "instagram",
       "foundAt": "2026-10-11T08:03:02Z"
+    },
+    {
+      "id": "d0c916810595",
+      "title": "도하 (나규민, Bae173) 생일 축하이벤트 컵홀더 행사 : 네이버 블로그",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://blog.naver.com/cafe-bom/223787516509",
+      "source": "web",
+      "foundAt": "2026-10-13T08:44:59Z"
+    },
+    {
+      "id": "1d88aff85dba",
+      "title": "더쿠 - 혹시 콘서트때 컵홀더 만들어서 나눔할까 하는데 어때?",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://theqoo.net/seventeen/4148976455",
+      "source": "web",
+      "foundAt": "2026-10-13T08:44:59Z"
+    },
+    {
+      "id": "b95274c2fa2d",
+      "title": "\"#원우컵홀더\" - Results on X | Live Posts & Updates",
+      "member": "wonwoo",
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://x.com/hashtag/%EC%9B%90%EC%9A%B0%EC%BB%B5%ED%99%80%EB%8D%94",
+      "source": "web",
+      "foundAt": "2026-10-13T08:44:59Z"
+    },
+    {
+      "id": "eb85c730541f",
+      "title": "더쿠 - 컵홀더 나눔 (끝)",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://theqoo.net/seventeen/4168785432",
+      "source": "web",
+      "foundAt": "2026-10-13T08:44:59Z"
+    },
+    {
+      "id": "664385a4e24a",
+      "title": "IPDEOK_Cafe | SEVENTEEN Mingyu Birthday Cupsleeve Event Event ...",
+      "member": "mingyu",
+      "region": null,
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.instagram.com/p/DID-KrWzQF6/",
+      "source": "instagram",
+      "foundAt": "2026-10-13T08:44:59Z"
     }
   ],
-  "updatedAt": "2026-10-12T08:23:34Z"
+  "updatedAt": "2026-10-13T08:48:40Z"
 }
