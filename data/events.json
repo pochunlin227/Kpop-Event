@@ -1919,7 +1919,22 @@
       "sourceUrl": "https://www.instagram.com/p/DID-KrWzQF6/",
       "source": "instagram",
       "foundAt": "2026-10-13T08:44:59Z"
+    },
+    {
+      "id": "a0c37d2fe458",
+      "title": "2026 woozi李知勳高雄生咖 운명",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-14",
+      "eventEnd": "2026-11-15",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "高雄市 · 沐恬甜點（寵物友善）",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-e8tVIx",
+      "source": "stellar",
+      "foundAt": "2026-10-14T06:55:05Z"
     }
   ],
-  "updatedAt": "2026-10-13T08:48:40Z"
+  "updatedAt": "2026-10-14T06:59:40Z"
 }
