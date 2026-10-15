@@ -1934,7 +1934,37 @@
       "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-e8tVIx",
       "source": "stellar",
       "foundAt": "2026-10-14T06:55:05Z"
+    },
+    {
+      "id": "890ff02b6d95",
+      "title": "Expecto Patronum!疾疾護法現身! | SEVENTEEN 生咖、生日應援活動",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.stellar-zone.com/event/seventeen-2026-05-vwRp1I",
+      "source": "stellar",
+      "foundAt": "2026-10-15T06:45:20Z"
+    },
+    {
+      "id": "3b0101c361dc",
+      "title": "全家咖啡推「吉伊卡哇杯塞」!烏薩奇、小八杯套免費 開賣日期曝 - NOWnews今日新聞",
+      "member": "the8",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1velByUEp0YmhRd2U3WFNSOWFkRG5EajNHZ3RJTlZIVUVMazJJLUxlbEh2X2pGUU9hYnVYUmJTYXVNaG1YZU9NZF95ZHDSAVJBVV95cUxQS2kzbkU5Q0d1TjFxU3FZYk5FRk9TV0psQXdQU3JWVFJyYXJGREFGNm5oalRKZm0wcmt5VU1tT2pSd1ViS0o4MjZmN2ZqaHlPQVVB?oc=5",
+      "source": "news",
+      "foundAt": "2026-10-15T06:48:49Z"
     }
   ],
-  "updatedAt": "2026-10-14T06:59:40Z"
+  "updatedAt": "2026-10-15T06:49:39Z"
 }
