@@ -1964,7 +1964,37 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1velByUEp0YmhRd2U3WFNSOWFkRG5EajNHZ3RJTlZIVUVMazJJLUxlbEh2X2pGUU9hYnVYUmJTYXVNaG1YZU9NZF95ZHDSAVJBVV95cUxQS2kzbkU5Q0d1TjFxU3FZYk5FRk9TV0psQXdQU3JWVFJyYXJGREFGNm5oalRKZm0wcmt5VU1tT2pSd1ViS0o4MjZmN2ZqaHlPQVVB?oc=5",
       "source": "news",
       "foundAt": "2026-10-15T06:48:49Z"
+    },
+    {
+      "id": "b272ee03556d",
+      "title": "2026李知勳生日咖啡廳「CRESCENDO」",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-21",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · 無序 Unbound Cafe",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-ez4RZQ",
+      "source": "stellar",
+      "foundAt": "2026-10-22T06:51:14Z"
+    },
+    {
+      "id": "f2a206267588",
+      "title": "『JUN』 Birthday Cafe - Junnie's Dumpling Shop - kculture.com",
+      "member": "jun",
+      "region": null,
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://kculture.com/k-event/%E3%80%8Ejun%E3%80%8F-birthday-cafe-junnies-dumpling-shop/",
+      "source": "web",
+      "foundAt": "2026-10-22T06:51:27Z"
     }
   ],
-  "updatedAt": "2026-10-21T06:52:51Z"
+  "updatedAt": "2026-10-22T06:54:53Z"
 }
