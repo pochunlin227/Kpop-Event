@@ -2024,7 +2024,22 @@
       "sourceUrl": "https://www.walkerland.com.tw/subject/view/420466",
       "source": "web",
       "foundAt": "2026-10-24T06:41:28Z"
+    },
+    {
+      "id": "7224f3dc7278",
+      "title": "PUDDING PARTY",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-20",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · Dimple Café 酒窩咖啡館 台北華山",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-ngbK8G",
+      "source": "stellar",
+      "foundAt": "2026-10-25T07:07:30Z"
     }
   ],
-  "updatedAt": "2026-10-24T06:44:41Z"
+  "updatedAt": "2026-10-25T07:11:01Z"
 }
