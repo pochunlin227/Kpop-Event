@@ -2039,7 +2039,67 @@
       "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-ngbK8G",
       "source": "stellar",
       "foundAt": "2026-10-25T07:07:30Z"
+    },
+    {
+      "id": "68dbf48adb5f",
+      "title": "2026 Happy Woozi Day",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-20",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · 小房間cafe",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-f2IzO9",
+      "source": "stellar",
+      "foundAt": "2026-10-27T07:04:37Z"
+    },
+    {
+      "id": "9b885d219dfc",
+      "title": "[ 2026 Happy Woozi Day Party ]",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-21",
+      "eventEnd": "2026-11-28",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "高雄市 · Un Bon cafe",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-OrHtF5",
+      "source": "stellar",
+      "foundAt": "2026-10-27T07:04:37Z"
+    },
+    {
+      "id": "94936b3715c3",
+      "title": "WOOZI HAPPY BIRTHDAY CAFE",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-21",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺南市 · BlankTime_留白時間咖啡",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-QakkhA",
+      "source": "stellar",
+      "foundAt": "2026-10-27T07:04:37Z"
+    },
+    {
+      "id": "b011b33e9276",
+      "title": "替HAN.Felix.昇珉慶生 生咖主辦 包場\"認知不同\"爆爭議 | TVBS - LINE TODAY",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBUQkxya0tUei1HZHU0M3Y3X0ViQk5uUWYzeVZYclFGUUROTVVFQ1g2UVJTcmtTUW5JS3lHOWlEOXRKblVLbjJERjQ3eW5jZ2ZzaEJxNjhn?oc=5",
+      "source": "news",
+      "foundAt": "2026-10-27T07:07:21Z"
     }
   ],
-  "updatedAt": "2026-10-26T07:18:11Z"
+  "updatedAt": "2026-10-27T07:08:11Z"
 }
