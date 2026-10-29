@@ -2114,7 +2114,22 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPZ0swOEhzZ3lnLTBZenVNRExESWtzN3lWamRDUUVXeFU2alVKMHgwQzdTU2sxeGNIRG5NeG5LNFEtdjRsWURWblRiSGY3b0tsZFRRYjhFY0JNQmx6Tk1wbTFsbjRzNndzTk8td2UzS000YURNcVZ6QTc3QlBHMnB1YWZqdVBQOVVURkRtWDZaRkRrNUZsNno3OTFfYVBmSF90MWZlTVFudFgtVVE?oc=5",
       "source": "news",
       "foundAt": "2026-10-28T07:47:37Z"
+    },
+    {
+      "id": "19387ae53646",
+      "title": "Seventeen Jun 生日應援活動 | Jun 生咖、生日應援活動 | Stellar 台灣生咖、生日應援地圖",
+      "member": "jun",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.stellar-zone.com/event/jun-2026-06-azIWsH",
+      "source": "stellar",
+      "foundAt": "2026-10-29T07:50:32Z"
     }
   ],
-  "updatedAt": "2026-10-28T07:48:18Z"
+  "updatedAt": "2026-10-29T07:53:53Z"
 }
