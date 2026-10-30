@@ -2129,7 +2129,37 @@
       "sourceUrl": "https://www.stellar-zone.com/event/jun-2026-06-azIWsH",
       "source": "stellar",
       "foundAt": "2026-10-29T07:50:32Z"
+    },
+    {
+      "id": "1d557ad93dca",
+      "title": "세븐틴 원우 생일카페 2026 방문 후기 - 네이버 블로그",
+      "member": "wonwoo",
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://blog.naver.com/at_last_spring/224351281612",
+      "source": "web",
+      "foundAt": "2026-10-30T07:54:58Z"
+    },
+    {
+      "id": "e88e1a69491c",
+      "title": "2026 세븐틴 우지 생카 (생일카페) | 우지의 홈카페",
+      "member": "woozi",
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.offmate.kr/place/birthday-cafe/detail/15976",
+      "source": "web",
+      "foundAt": "2026-10-30T07:54:58Z"
     }
   ],
-  "updatedAt": "2026-10-29T07:53:53Z"
+  "updatedAt": "2026-10-30T07:58:04Z"
 }
