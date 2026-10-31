@@ -2159,7 +2159,37 @@
       "sourceUrl": "https://www.offmate.kr/place/birthday-cafe/detail/15976",
       "source": "web",
       "foundAt": "2026-10-30T07:54:58Z"
+    },
+    {
+      "id": "98ed4ea8fef5",
+      "title": "HAPPY WOOZI DAY",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-21",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · Little Donkey Cafe 小驢館(應援/生咖/場租/不定時休假，請看",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-IXx3Yb",
+      "source": "stellar",
+      "foundAt": "2026-10-31T07:46:21Z"
+    },
+    {
+      "id": "a012ffbd480e",
+      "title": "【11/22場次】 布丁派對 Pudding Party | Woozi 李知勳生日應援咖啡廳 2026",
+      "member": "woozi",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://puddingpartytw.kktix.cc/events/woozi1122",
+      "source": "web",
+      "foundAt": "2026-10-31T07:46:34Z"
     }
   ],
-  "updatedAt": "2026-10-30T07:58:04Z"
+  "updatedAt": "2026-10-31T07:49:56Z"
 }
