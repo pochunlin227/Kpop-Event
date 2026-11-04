@@ -2264,7 +2264,67 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE5PUEtiZERuM21NM2N3LTBxc2pyeWVTbnJlMXNYeURIcWNVLURlenh1SllaZXJjWm9JWjBrSFNhUWFUZlllb2hEddIBTEFVX3lxTE01MlBoMy04aFloSTVvZXVacVFVME1Bdy1JSGN2RUFEU0JFb19sdmFWc3FQVExaWmhNU1ZpZWRhZ09HQ1I0VTU3NF9BNzE?oc=5",
       "source": "news",
       "foundAt": "2026-11-03T08:53:37Z"
+    },
+    {
+      "id": "6d8e2cf6578d",
+      "title": "Miracle 2026 知勳生日應援展覽",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-19",
+      "eventEnd": "2026-11-23",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · 濕地｜venue",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-ZZHhHq",
+      "source": "stellar",
+      "foundAt": "2026-11-04T08:20:16Z"
+    },
+    {
+      "id": "53bcf0249b80",
+      "title": "HAPPY WOOZI DAY 知勳生日應援台南",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-20",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺南市 · ami14朋友食室",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-GPTeBr",
+      "source": "stellar",
+      "foundAt": "2026-11-04T08:20:16Z"
+    },
+    {
+      "id": "5023bcb35897",
+      "title": "HAPPY WOOZI DAY",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-20",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · KAJIMA CAFE 가지마 카페 咖機馬 應援咖啡廳 / 生咖 / 手機租借",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-PYjWRZ",
+      "source": "stellar",
+      "foundAt": "2026-11-04T08:20:16Z"
+    },
+    {
+      "id": "7c092ea3f50d",
+      "title": "NewJeans玟池生咖驚喜現身!親手烤500片餅乾送粉絲 親筆信洩近況 - Kagit",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBpZVZKRGZGc2lKc0Zfd0VySDZLaXV6Nm1ubDZQNjkxcTlWRHhRSnVxNFEyY3h0M0NvelhtVlNSTmFKR0p4TXQyVHlnalhMclNqdHJOWUVjb2VBcmlkRFE3MmxfbHVsS2dIekE?oc=5",
+      "source": "news",
+      "foundAt": "2026-11-04T08:22:51Z"
     }
   ],
-  "updatedAt": "2026-11-03T08:54:28Z"
+  "updatedAt": "2026-11-04T08:23:50Z"
 }
