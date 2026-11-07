@@ -2384,7 +2384,52 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9KWFk3NlJycWJrcGRuQTk2MERsRFpobnBJM0dIaXo3bHFZRGdTbnVmMXRoY2RVSmx5anFGSDd5T29jX0d1NTJadGNGYzBmZw?oc=5",
       "source": "news",
       "foundAt": "2026-11-05T08:48:20Z"
+    },
+    {
+      "id": "06523705c5cb",
+      "title": "THE LIMINAL NIGHT —— An Exhibition about Joshua",
+      "member": "joshua",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-12-25",
+      "eventEnd": "2026-12-27",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺南市 · 禾嶼‧Heyu",
+      "sourceUrl": "https://www.stellar-zone.com/event/joshua-2026-12-RR0QYt",
+      "source": "stellar",
+      "foundAt": "2026-11-07T08:02:01Z"
+    },
+    {
+      "id": "c1679c9638ce",
+      "title": "愛無限|2026 THE8 Birthday Cafe | WeKenGo",
+      "member": "the8",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://wekengo.tw/event/DjVtPs/ai-wu-xian-2026the8birthdaycafe",
+      "source": "web",
+      "foundAt": "2026-11-07T08:02:22Z"
+    },
+    {
+      "id": "1a5874059647",
+      "title": "民進黨40週年慶高雄生咖登場黃捷持續推動黨部年輕化| 政治 - Newtalk新聞",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1SWDRYRnRuQlNkQnA5WFdyaHV5cFpDWFRPVE0taTFFTGxkamVaUVFyQUJGaVVKY2drRHVTbnZQRnFvdTJSMGI1S1NLdWpMRkJlUWo4ZVlVR3FxLWc?oc=5",
+      "source": "news",
+      "foundAt": "2026-11-07T08:04:54Z"
     }
   ],
-  "updatedAt": "2026-11-06T08:50:36Z"
+  "updatedAt": "2026-11-07T08:05:45Z"
 }
