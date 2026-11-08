@@ -2429,7 +2429,82 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1SWDRYRnRuQlNkQnA5WFdyaHV5cFpDWFRPVE0taTFFTGxkamVaUVFyQUJGaVVKY2drRHVTbnZQRnFvdTJSMGI1S1NLdWpMRkJlUWo4ZVlVR3FxLWc?oc=5",
       "source": "news",
       "foundAt": "2026-11-07T08:04:54Z"
+    },
+    {
+      "id": "e94d310f65d4",
+      "title": "Woozi生日應援",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-13",
+      "eventEnd": "2026-12-06",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "屏東縣 · Nene雞蛋糕販賣所｜每日口味看限動（fb.ig)｜屏東人氣下午茶｜台灣流沙鹹蛋",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-V6ax2V",
+      "source": "stellar",
+      "foundAt": "2026-11-08T08:21:10Z"
+    },
+    {
+      "id": "9bdf26f6ead3",
+      "title": "2026 Seventeen 生日咖啡廳 | Busan 16997",
+      "member": null,
+      "region": "US",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://dukplace.com/tw/place/events/detail/16997",
+      "source": "web",
+      "foundAt": "2026-11-08T08:21:20Z"
+    },
+    {
+      "id": "f926f606baaa",
+      "title": "他卡口 | SEREIN:SEVENTEEN THE8 2026 BIRTHDAY EVENT in TAIPEI +⊹ ̊ GIFT 來店特典 ...",
+      "member": "the8",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.instagram.com/p/DeRL78JPtn8/",
+      "source": "instagram",
+      "foundAt": "2026-11-08T08:21:20Z"
+    },
+    {
+      "id": "fa7cd733bed3",
+      "title": "花上萬元幫偶像慶生!直擊台韓「生日咖啡廳」文化打造愛の空間 - TVBS新聞網",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBJU08xeWx4eWpOZ3lySEVVQVd4aENpM3ozSlZHS29EZ0ZpV3VYbkVyYnFGLXhPaHdpRTlUQUo5WGNlS01iMGhuYVdpaWJRbll1QzdhdU5uWmVhbURGVE50S3lkcw?oc=5",
+      "source": "news",
+      "foundAt": "2026-11-08T08:23:52Z"
+    },
+    {
+      "id": "43f4cbbb1f20",
+      "title": "KARA韓昇延現身粉絲應援生咖 「神情疲憊+手抖」健康惹人憂 - 噓!星聞",
+      "member": "dk",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBEQnJIaW9CcThLRDNIdGhwY3JBQU9rRmM0Sk53VnRJeFBKd21QX1dTaTY3TkxwRThMSGozQnpMSDYtWjFvLXpkV282Vy1CLVR1OFBrY2ZFZFNkUdIBX0FVX3lxTE5hb0lYcTYzWWRuTy16c3Z3NGdqRFRNSXFYM0kwUEFHdkh5Mmp4a25Qd2tJWUY4Vy1nTmpNV2t5elZpQ2lGWHJvSkVCV2FjM2JZTkk4VzRRRzNoYVZfTmtr?oc=5",
+      "source": "news",
+      "foundAt": "2026-11-08T08:23:52Z"
     }
   ],
-  "updatedAt": "2026-11-07T08:05:45Z"
+  "updatedAt": "2026-11-08T08:24:42Z"
 }
