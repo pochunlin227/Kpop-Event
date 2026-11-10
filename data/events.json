@@ -2519,7 +2519,52 @@
       "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-zH6W3b",
       "source": "stellar",
       "foundAt": "2026-11-09T08:52:59Z"
+    },
+    {
+      "id": "89a7fb74315b",
+      "title": "THE WAKING LIGHT —— A Birthday Café for Joshua",
+      "member": "joshua",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-12-25",
+      "eventEnd": "2026-12-30",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺南市 · BlankTime_留白時間咖啡",
+      "sourceUrl": "https://www.stellar-zone.com/event/joshua-2026-12-ITUH8W",
+      "source": "stellar",
+      "foundAt": "2026-11-10T08:59:08Z"
+    },
+    {
+      "id": "538cf01c216a",
+      "title": "HAPPY WOOZI DAY TV WALL",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-17",
+      "eventEnd": "2026-11-23",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · 臺北京站威秀影城",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-I1GVsA",
+      "source": "stellar",
+      "foundAt": "2026-11-10T08:59:13Z"
+    },
+    {
+      "id": "32fae0ff5a11",
+      "title": "偶像去了隔壁卻沒來!RESCENE韓粉辦生咖崩潰 長文掀千則論戰 | ETtoday星光雲 - LINE TODAY",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0zaEtmbmg0MS1xMk5YcUJQdXlOMndrUzJ4NldYOTBRM1hNZlY5XzdRWV9FRWhHenpfS3BURXlJUk5Odml0Y1ByaDN1M2FNaW9xdEhwSXpB?oc=5",
+      "source": "news",
+      "foundAt": "2026-11-10T09:01:52Z"
     }
   ],
-  "updatedAt": "2026-11-09T08:56:34Z"
+  "updatedAt": "2026-11-10T09:02:42Z"
 }
