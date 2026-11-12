@@ -2564,7 +2564,22 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0zaEtmbmg0MS1xMk5YcUJQdXlOMndrUzJ4NldYOTBRM1hNZlY5XzdRWV9FRWhHenpfS3BURXlJUk5Odml0Y1ByaDN1M2FNaW9xdEhwSXpB?oc=5",
       "source": "news",
       "foundAt": "2026-11-10T09:01:52Z"
+    },
+    {
+      "id": "760dc78ecade",
+      "title": "Seventeen 生咖、生日應援活動地圖 | Stellar",
+      "member": null,
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://www.stellar-zone.com/map/seventeen",
+      "source": "stellar",
+      "foundAt": "2026-11-12T08:59:28Z"
     }
   ],
-  "updatedAt": "2026-11-11T08:43:15Z"
+  "updatedAt": "2026-11-12T09:02:49Z"
 }
