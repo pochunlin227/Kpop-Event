@@ -2579,7 +2579,37 @@
       "sourceUrl": "https://www.stellar-zone.com/map/seventeen",
       "source": "stellar",
       "foundAt": "2026-11-12T08:59:28Z"
+    },
+    {
+      "id": "2f64cb1b5ef3",
+      "title": "Stella Segetis: Season of Growth_Winter",
+      "member": "vernon",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2027-02-20",
+      "eventEnd": "2027-02-21",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "新北市 · cafe noote（偶像應援、包場活動請私訊if、公休日請參考ig臉書貼文或限",
+      "sourceUrl": "https://www.stellar-zone.com/event/vernon-2027-02-L0mggK",
+      "source": "stellar",
+      "foundAt": "2026-11-13T08:55:18Z"
+    },
+    {
+      "id": "4e76df8f9bef",
+      "title": "暖暖生日咖啡廳登場!NIKKI X SYNC cafe & bistro「暖色心願」限定慶生活動,12.6 日還有神秘角色登場 - SouNova 少女星",
+      "member": "dk",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1dnZrU1lBM2xVZ0d6cDloYmpzNGNZN3NDTlJhdkItOUNUV1hZbjNsZzI0NERhQktwenlQNGdVTGU4QkNUX3FPaFZocFV5VHVwTU01N29LR3poTjNkV2c?oc=5",
+      "source": "news",
+      "foundAt": "2026-11-13T08:58:01Z"
     }
   ],
-  "updatedAt": "2026-11-12T09:02:49Z"
+  "updatedAt": "2026-11-13T08:58:42Z"
 }
