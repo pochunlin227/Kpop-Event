@@ -2609,7 +2609,52 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA1dnZrU1lBM2xVZ0d6cDloYmpzNGNZN3NDTlJhdkItOUNUV1hZbjNsZzI0NERhQktwenlQNGdVTGU4QkNUX3FPaFZocFV5VHVwTU01N29LR3poTjNkV2c?oc=5",
       "source": "news",
       "foundAt": "2026-11-13T08:58:01Z"
+    },
+    {
+      "id": "ebab7568e576",
+      "title": "1122 Happy WOOZI Day 台北",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-21",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "臺北市 · HOHO DRINKS 台北信義",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-Y4sp9V",
+      "source": "stellar",
+      "foundAt": "2026-11-15T08:39:00Z"
+    },
+    {
+      "id": "e5a5e1ced15a",
+      "title": "1122 Happy WOOZI Day 高雄",
+      "member": "woozi",
+      "region": "TW",
+      "status": "confirmed",
+      "eventStart": "2026-11-21",
+      "eventEnd": "2026-11-22",
+      "signupStart": null,
+      "signupEnd": null,
+      "location": "高雄市 · 貳月晴",
+      "sourceUrl": "https://www.stellar-zone.com/event/woozi-2026-11-hmSl2E",
+      "source": "stellar",
+      "foundAt": "2026-11-15T08:39:00Z"
+    },
+    {
+      "id": "14f466dc760f",
+      "title": "策劃的人根本就是天才!SEVENTEEN淨漢生咖的照片牆長這樣,完全是暗戀女的視角 - Yahoo",
+      "member": "jeonghan",
+      "region": "TW",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiygNBVV95cUxPWkhRYXBYSDR1QWYzOXlvanAwbHhyUnNqZ3hVZ1VoRDVldkJUQ0F2ODlVYk5Zcm5mWGJlS09FLU9RQmdkcUFBOUp0M0lERkRUNGQxVDVWZHIzRDRuSmJMQ2VidjBMUlJqNUgyUE9RSmdHa3l0eWprZUFNMzROY3BBcVBqNlNwcXRRX0thNzRSOHdOMjd2Nk1wMWpOcngyb1dIVXlVY25VZWRwNlowYmhVZlUyTHBtZXpjZXp6ZTlOd0V2Vk5XY0F2OTFMdVlBeFNHSjhzZTRxcWtxa2s3aTNjNXgtd0xmbnNTWVJrTUVOR1lQWmhoeXdoSUROa1p3ZHZjYzVvMjBXZ3pCU2RMRzJVcVVielFmUlUySDhCU3JGaUViVGJhMmdWRDNoTC14enktRGZ4cmtvM3pKaElidDAtMHpHemZHTHZ6bENZSmRiaXBYVVQ0aXdtZWlnVVJlMndhTUNOM2xXdWlJSjd0QmNZY2NFYi1MVm5BOFVicUhaT2lqQlBxWHRDZUxIYXpsNFVhYjlXS0MzN2FLWURmSGhxeS14dzkzVjlJd0hwQS1ISXVWeW1RREtKNndkLXFXUXFZOEZBQzJuWXI2QQ?oc=5",
+      "source": "news",
+      "foundAt": "2026-11-15T08:39:10Z"
     }
   ],
-  "updatedAt": "2026-11-14T08:23:55Z"
+  "updatedAt": "2026-11-15T08:43:29Z"
 }
