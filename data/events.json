@@ -3239,7 +3239,37 @@
       "sourceUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE0yV3J1aXRKWEhMd2duR2tGRmhvY3pWTlJGcnN0YnlNLWlPaXRQZDFUNlctWG5fcUxoYnFMNUduaXkzRnd1a0U1TEtEM0tYSmg5UDVtMFpn?oc=5",
       "source": "news",
       "foundAt": "2026-11-21T09:03:06Z"
+    },
+    {
+      "id": "4baf7e2f1a6c",
+      "title": "應援廣告|生日咖啡廳|韓國 - Dukplace",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://dukplace.com/tw/place/events/rank",
+      "source": "web",
+      "foundAt": "2026-11-22T09:05:46Z"
+    },
+    {
+      "id": "784a9d0c213b",
+      "title": "韩国生日咖啡厅是什么?首尔生咖寻找方法、赠品与打卡攻略 | Beautipin Seoul",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://beautipin.com/zh-hans/blogs/magazine/kpop-birthday-cafe-guide",
+      "source": "web",
+      "foundAt": "2026-11-22T09:05:55Z"
     }
   ],
-  "updatedAt": "2026-11-21T09:03:51Z"
+  "updatedAt": "2026-11-22T09:09:10Z"
 }
