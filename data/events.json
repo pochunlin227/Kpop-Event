@@ -3269,7 +3269,37 @@
       "sourceUrl": "https://beautipin.com/zh-hans/blogs/magazine/kpop-birthday-cafe-guide",
       "source": "web",
       "foundAt": "2026-11-22T09:05:55Z"
+    },
+    {
+      "id": "cc0d0d38d6f7",
+      "title": "首爾偶像生日咖啡廳指南:弘大活動查找與踩點路線 | Locarora",
+      "member": null,
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://locarora.com/zh-TW/blog/seoul-idol-birthday-cafe-hongdae-guide",
+      "source": "web",
+      "foundAt": "2026-11-26T10:14:08Z"
+    },
+    {
+      "id": "5a3c9cf9643c",
+      "title": "SEVENTEEN珉奎生日咖啡厅:弘大两场生咖信息 | NOL World",
+      "member": "mingyu",
+      "region": "KR",
+      "status": "candidate",
+      "eventStart": null,
+      "eventEnd": null,
+      "signupStart": null,
+      "signupEnd": null,
+      "location": null,
+      "sourceUrl": "https://world.nol.com/zh-CN/content/festas/01953add-e34a-710d-af34-319ec6b33f05",
+      "source": "web",
+      "foundAt": "2026-11-26T10:14:08Z"
     }
   ],
-  "updatedAt": "2026-11-25T10:46:30Z"
+  "updatedAt": "2026-11-26T10:17:33Z"
 }
